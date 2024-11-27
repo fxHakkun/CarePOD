@@ -50,7 +50,7 @@ def gather_message_details():
 def gather_observation_results():
     print("Enter Observation Results (OBX):")
     results = []
-    while True:
+    while len(results)< 10:
         observation_name = input("Observation Name (or 'done' to finish): ").strip()
         if observation_name.lower() == 'done':
             break
